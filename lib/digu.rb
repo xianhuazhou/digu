@@ -28,6 +28,7 @@ require 'rubygems'
 require 'http_request'
 
 class Digu
+    VERSION = '0.1'
     BASE_DIGU_URL = 'http://digu.com'
 
     def initialize
