@@ -6,8 +6,35 @@
 
   [sudo] gem install digu --source http://gemcutter.org/
 
+    $irb
+    > require 'rubygems'
+    => true
+
+    > require 'digu'
+    => true
+
+    > Digu::VERSION
+    => "0.1"
+
+    > digu = Digu.new
+    => #<Digu:0x7f654d0f6a90 @http=#<Net::HTTPOK 200 OK readbody=true>>
+
+    > digu.login 'username', '****password***'
+    => true
+
+    > digu.post 'Say hi to everybody'
+    => true
+
+    > digu.logout
+    => #<Net::HTTPOK 200 OK readbody=true>
+
+    > digu.login?
+    => false
+
+
 == Example
    
+   require 'digu'
    digu = Digu.new.login 'user', 'pass'
    if digu.login?
        if digu.post 'I like this'
