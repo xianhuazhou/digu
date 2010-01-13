@@ -1,0 +1,22 @@
+== Description
+   
+   This is a client library of digu.com  for post messages, will add more features later...
+
+== Example
+   
+   digu = Digu.new.login 'user', 'pass'
+   if digu.login?
+       if digu.post 'I like this'
+           puts "Your message has posted to digu.com"
+       end
+       digu.logout
+   end
+
+== Version
+   
+   v0.1
+
+== Author
+
+   xianhua.zhou<xianhua.zhou@gmail.com>
+
