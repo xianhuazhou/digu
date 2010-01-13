@@ -2,6 +2,10 @@
    
    This is a client library of digu.com  for post messages, will add more features later...
 
+== INSTALL
+
+  [sudo] gem install digu --source http://gemcutter.org/
+
 == Example
    
    digu = Digu.new.login 'user', 'pass'
