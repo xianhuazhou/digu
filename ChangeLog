@@ -1,3 +1,6 @@
+v0.3
+  Digu#login should return the Digu object it self
+
 v0.2
   return Digu object instead of the TrueClass || FalseClass in the Digu#login
   method

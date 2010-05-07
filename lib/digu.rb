@@ -54,6 +54,7 @@ class Digu
         },
             :cookies => @http.cookies
         )
+        self
     end
 
     def login?
