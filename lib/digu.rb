@@ -16,7 +16,7 @@
 #
 # == Version
 #   
-#   v0.1
+#   v0.2
 #
 # == Author
 #
@@ -28,7 +28,7 @@ require 'rubygems'
 require 'http_request'
 
 class Digu
-    VERSION = '0.1'
+    VERSION = '0.2'
     BASE_DIGU_URL = 'http://digu.com'
 
     def initialize
@@ -54,7 +54,6 @@ class Digu
         },
             :cookies => @http.cookies
         )
-        login?
     end
 
     def login?
@@ -124,6 +123,6 @@ end
 
 if __FILE__ == $0
    digu = Digu.new
-   puts digu.post 'What is the best thing in the world?' if digu.login 'username', 'password'
+   puts digu.post 'hello world' if digu.login(ARGV[0] || 'username', ARGV[1] || 'password')
    digu.logout if digu.login?
 end

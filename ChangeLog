@@ -1,2 +1,6 @@
+v0.2
+  return Digu object instead of the TrueClass || FalseClass in the Digu#login
+  method
+
 v0.1
   first version.

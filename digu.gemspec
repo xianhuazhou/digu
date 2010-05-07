@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "digu"
-  s.version = "0.1"
-  s.date = "2010-01-12"
+  s.version = "0.2"
+  s.date = "2010-05-07"
   s.summary = "Client library of digu.com"
   s.email = "xianhua.zhou@gmail.com"
   s.homepage = "http://my.cnzxh.net/"
